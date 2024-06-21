@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    body{
+        @apply tracking-wider bg-bgColor text-textBg font-jost
+    }
+}
+
+@layer utilities{
+    .menu-link{
+        @apply hover:text-[#00AEFF] ease-in-out duration-300 font-semibold
+    }
+}
+
+@layer utilities{
+    .type-house{
+        @apply flex flex-col items-center py-10 w-48 relative
+    }
+}
+@layer utilities{
+    .icon{
+        @apply w-8 h-8 rounded-full flex justify-center items-center bg-bgColor shadow hover:text-bgColor hover:bg-[#00AEFF] duration-300 ease-in-out
+    }
+}
+
+
+@layer utilities{
+    .contact{
+        @apply flex gap-3 py-2
+    }
+}
+@layer utilities{
+    .footer-img{
+        @apply border-4 border-[#00AEFF] rounded-md
+    }
+}
+
+@layer utilities{
+    .explore{
+        @apply hover:bg-bgColor hover:backdrop-blur-md h-full w-full absolute block top-0 transition-[0.6s] hover:opacity-55
+    }
+}

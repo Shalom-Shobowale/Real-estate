@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+  rel="stylesheet"/>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+<header class="sticky top-0 z-10">
+    <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+          <a href="main.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <div class="text-3xl font-bold"><i class="fa-solid fa-house text-3xl"></i>FORDLAND</div>
+          </a>
+          <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+              <span class="sr-only">Open main menu</span>
+              <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                  <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+              </svg>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+            <ul class="font-medium flex flex-col items-center justify-center p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                <li><a href="main.html" class="menu-link">HOME</a></li>
+                <li><a href="About.html" class="menu-link text-[#00AEFF]">ABOUT</a></li>
+                <li><a href="property.html" class="menu-link">PROPERTY</a></li>
+                <li><a href="Blog.html" class="menu-link">BLOG</a></li>
+                <li><a href="contact.html" class="menu-link">CONTACT</a></li>
+                <button class="bg-[#00AEFF] px-4 py-3 rounded font-semibold text-bgColor"><a href="property.html">Add Property</a></button>
+            </ul>
+          </div>
+        </div>
+    </nav>
+</header>
+
+<div class="bg-no-repeat bg-center bg-cover flex items-center sm:px-40 sm:py-20" style="background-image: url(./image/dark-contact.png);">
+    
+    <div class="p-10 sm:p-0">
+        <p class="text-6xl text-bgColor font-bold">About Us</p>
+        <p class="text-bgColor text-[24px] my-5">Get started by choosing from one of our pre-built page templates</br> to showcase your properties</p>
+        <!-- <button class="bg-[#00AEFF] px-4 py-3 rounded font-semibold text-bgColor"><a href="">View Property</a></button> -->
+    </div>   
+</div>
+
+<!-- about -->
+<div class="flex justify-between items-center">
+    <div class="sm:flex-row flex-col p-10 sm:px-16 pt-20 flex gap-10">
+        <div class="sm:w-[50%] relative">
+            <div class="h-0 sm:w-[350px] border-b-[400px] sm:border-b-[600px] border-touch border-r-[100px] border-x-transparent"></div>
+            <img src="image/about.jpg" alt="" class="absolute sm:w-[500px] sm:left-12 top-12">
+        </div>
+        <div class="sm:w-[50%] flex flex-col justify-center">
+            <h1 class="text-5xl font-bold">#1 Place To Find The Perfect Property</h1>
+            <p class="my-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+            <div class="mb-4">
+                <P><i class="fa-solid fa-check" class="font-bold"></i> Tempor erat elitr rebum at clita</P>
+                <P><i class="fa-solid fa-check" class="font-bold"></i> Aliqu diam amet diam et eos</P>
+                <P><i class="fa-solid fa-check" class="font-bold"></i> Clita duo justo magna dolore erat amet</P>
+            </div>
+            <button class="bg-[#00AEFF] px-4 py-3 w-40 rounded font-semibold text-bgColor"><a href="property.html">Add Property</a></button>
+        </div>
+    </div>
+</div>
+
+<!-- team -->
+<div class="sm:m-16 m-5">
+    <div class="text-center">
+        <h1 class="text-4xl font-[500]">Property Agents</h1>
+        <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd<br> vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+    </div>
+    <div class="flex flex-wrap justify-around">
+        <div class="sm:w-[260px] bg-bgColor rounded-md shadow-md mt-10 relative" data-aos="zoom-in">
+            <div>
+                <img src="image/team-1.jpg" alt="" class="rounded-t-md">
+            </div>
+            <div class="text-center py-8">
+                <p class="font-bold text-2xl">Full Name</p>
+                <p>Designation</p>
+            </div>
+            <div class="flex justify-center items-center w-full absolute bottom-[100px] text-touch gap-3">
+                <div class="icon"><a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a></div>
+                <div class="icon"><a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a></i></div>
+                <div class="icon"><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></i></div>
+            </div>
+        </div>
+        <!-- second -->
+        <div class="sm:w-[260px] bg-bgColor rounded-md shadow-md mt-10 relative"  data-aos="zoom-in">
+            <div>
+                <img src="image/team5.webp" alt="" class="rounded-t-md sm:h-[260px] sm:w-full">
+            </div>
+            <div class="text-center py-8">
+                <p class="font-bold text-2xl">Full Name</p>
+                <p>Designation</p>
+            </div>
+            <div class="flex justify-center items-center w-full absolute bottom-[100px] text-touch gap-3">
+                <div class="icon"><a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a></div>
+                <div class="icon"><a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a></i></div>
+                <div class="icon"><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></i></div>
+            </div>
+        </div>
+        <!-- third -->
+        <div class="sm:w-[260px] bg-bgColor rounded-md shadow-md mt-10 relative" data-aos="zoom-in">
+            <div>
+                <img src="image/girl.webp" alt="" class="rounded-t-md sm:h-[260px] sm:w-full">
+            </div>
+            <div class="text-center py-8">
+                <p class="font-bold text-2xl">Full Name</p>
+                <p>Designation</p>
+            </div>
+            <div class="flex justify-center items-center w-full absolute bottom-[100px] text-touch gap-3">
+                <div class="icon"><a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a></div>
+                <div class="icon"><a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a></i></div>
+                <div class="icon"><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></i></div>
+            </div>
+        </div>
+        <!-- fourth -->
+        <div class="sm:w-[260px] bg-bgColor rounded-md shadow-md mt-10 relative" data-aos="zoom-in">
+            <div>
+                <img src="image/team4.jpg" alt="" class="rounded-t-md sm:h-[260px] sm:w-full">
+            </div>
+            <div class="text-center py-8">
+                <p class="font-bold text-2xl">Full Name</p>
+                <p>Designation</p>
+            </div>
+            <div class="flex justify-center items-center w-full absolute bottom-[100px] text-touch gap-3">
+                <div class="icon"><a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a></div>
+                <div class="icon"><a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a></i></div>
+                <div class="icon"><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></i></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- explore -->
+<div class="bg-slate-100 p-10 flex sm:flex-row flex-col items-center sm:p-20 mb-12">
+    <div class="sm:w-[35%] w-full">
+        <h1 class="text-4xl font-[500] mb-5">Explore <br>by Property Type</h1>
+        <p class="mb-6 text-[18px] text-[#5e5e5e]">Get started by choosing from one of our pre-<br>built page templates to showcase your<br> properties</p>
+        <button class="bg-[#00AEFF] py-3 px-10 rounded font-semibold text-bgColor"><a href="">Add Property</a></button>
+    </div>
+    <div class="bg-white sm:w-[65%] flex flex-col sm:flex-row items-center w-full">
+        <div class="type-house">
+            <div>
+                <img src="image/property1.svg" alt="">
+            </div>
+            <p>Home&Apartment</p>
+            <!-- <div class="explore flex items-center"></div> -->
+        </div>
+        <div class="type-house">
+            <div>
+                <img src="image/property2.svg" alt="">
+            </div>
+            <p>Studio</p>
+            <div class="explore"></div>
+        </div>
+        <div class="type-house">
+            <div>
+                <img src="image/property3.svg" alt="">
+            </div>
+            <p>Studio</p>
+            <div class="explore"></div>
+        </div>
+        <div class="type-house">
+            <div>
+                <img src="image/property4.svg" alt="">
+            </div>
+            <p>Office</p>
+            <div class="explore"></div>
+        </div>
+    </div>
+</div>
+<!-- footer -->
+<footer class="px-10 sm:px-16 py-20 bg-touch">
+    <div class="flex sm:flex-row flex-col justify-center">
+        <div class="sm:w-[22%]">
+            <h1 class="font-bold text-[24px] text-bgColor">Get In Touch</h1>
+            <div class="contact">
+                <div><i class="fa-solid fa-location-dot text-bgColor"></i></div>
+                <p class="text-bgColor">23 Street, Lagos, Nigeria</p>
+            </div>
+            <div class="contact">
+                <div><i class="fa-solid fa-phone text-bgColor"></i></div>
+                <p class="text-bgColor">09038186039</p>
+            </div>
+            <div class="contact">
+                <div><i class="fa-solid fa-envelope text-bgColor"></i></div>
+                <p class="text-bgColor">info@example.com</p>
+            </div>
+    
+            <div class="contact">
+                <div class="icon"><a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a></i></div>
+                <div class="icon"><a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a></div>
+                <div class="icon"><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></i></div>
+                <div class="icon"><a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a></i></div>
+            </div>
+        </div>
+        <div class="sm:w-[22%]">
+            <h1 class="font-bold text-[24px] text-bgColor">Quick Links</h1>
+            <li class="list-none hover:underline text-touch"><a href="About.html" class="text-bgColor">About Us</a></li>
+            <li class="list-none hover:underline py-2 text-touch"><a href="contact.html" class="text-bgColor">Contact Us</a></li>
+            <li class="list-none hover:underline text-touch"><a href="" class="text-bgColor">Our Service</a></li>
+            <li class="list-none hover:underline py-2 text-touch"><a href="privacy.html" class="text-bgColor">Privacy Policy</a></li>
+            <li class="list-none hover:underline text-touch"><a href="" class="text-bgColor">Teams & Condition</a></li>
+        </div>
+        <div class="sm:w-[28%]">
+            <h1 class="font-bold text-[24px] text-bgColor mb-4">Photo Gallery</h1>
+            <div class="flex flex-wrap gap-2">
+                <div class="footer-img">
+                    <img src="image/img1.jpg" alt="" class="w-20 h-14 rounded-md">
+                </div>
+                <div class="footer-img">
+                    <img src="image/wonder 3.webp" alt="" class="w-20 h-14 rounded-md">
+                </div>
+                <div class="footer-img">
+                    <img src="image/wonder1.webp" alt="" class="w-20 h-14 rounded-md">
+                </div>
+                <div class="footer-img">
+                    <img src="image/wonder3.webp" alt="" class="w-20 h-14 rounded-md">
+                </div>
+                <div class="footer-img">
+                    <img src="image/peace.avif" alt="" class="w-20 h-14 rounded-md">
+                </div>
+                <div class="footer-img">
+                    <img src="image/home4.jpg" alt="" class="w-20 h-14 rounded-md">
+                </div>
+            </div>
+        </div>
+        <div class="sm:w-[28%]">
+            <h1 class="font-bold text-[24px] text-bgColor">Newsletter</h1>
+            <p class="text-bgColor py-2">Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+            <div class="relative flex items-center">
+                <input type="text" placeholder="Your email" class="rounded-md w-full py-4 ml-2 px-5">
+                <button class="bg-[#00AEFF] absolute right-2 px-4 py-3 text-bgColor rounded-md">Sign Up</button>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+ <script src="maim.js"></script>
+</body>
+</html>

@@ -1,0 +1,648 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+  rel="stylesheet"/>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+     <!-- navigation -->
+     <header class="sticky top-0 z-10">
+        <nav class="bg-white border-gray-200 dark:bg-gray-900">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+              <a href="main.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+                <div class="text-3xl font-bold"><i class="fa-solid fa-house text-3xl"></i>FORDLAND</div>
+              </a>
+              <button data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                  <span class="sr-only">Open main menu</span>
+                  <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                      <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                  </svg>
+              </button>
+              <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul class="font-medium flex flex-col items-center justify-center p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
+                    <li><a href="main.html" class="menu-link text-[#00AEFF]">HOME</a></li>
+                    <li><a href="About.html" class="menu-link">ABOUT</a></li>
+                    <li><a href="property.html" class="menu-link">PROPERTY</a></li>
+                    <li><a href="Blog.html" class="menu-link">BLOG</a></li>
+                    <li><a href="contact.html" class="menu-link">CONTACT</a></li>
+                    <button class="bg-[#00AEFF] hidden sm:flex px-4 py-3 rounded font-semibold text-bgColor"><a href="property.html">Add Property</a></button>
+                </ul>
+              </div>
+            </div>
+        </nav>
+    </header>
+    <!-- back-ground image -->
+    <div class="h-screen bg-no-repeat bg-center bg-cover flex items-center sm:pl-40" style="background-image: url(./image/dark-lagos.png);">
+    
+        <div class="p-10 sm:p-0">
+            <p class="text-5xl text-bgColor font-bold">Find A <span class="text-[#00AEFF]">Perfect Home</span><br>To Live With Your<br>Family</p>
+            <p class="text-bgColor my-5">Get Started by clicking on the view Property to see the<br> differnt types of land properties we have to offer.</p>
+            <button class="bg-[#00AEFF] px-4 py-3 rounded font-semibold text-bgColor"><a href="property.html">View Property</a></button>
+        </div>   
+    </div>
+    <div class="flex flex-wrap justify-around items-center py-10 bg-touch">
+        <input type="text" placeholder="Search Keyword" class="w-72 py-3 rounded-md px-5">
+        <div>
+            <select name="" id="" class="w-72 py-3 px-5 rounded-md my-2">
+                <option value="">Location</option>
+                <option value="">Location 1</option>
+                <option value="">Location 2</option>
+                <option value="">Location 3</option>
+                <option value="">Location 4</option>
+            </select>
+        </div>
+        <div>
+            <select name="" id="" class="w-72 py-3 px-5 rounded-md">
+                <option value="">Property</option>
+                <option value="">Property 1</option>
+                <option value="">Property 2</option>
+                <option value="">Property 3</option>
+                <option value="">Property 4</option>
+            </select>
+        </div>
+        <button class="bg-[#00AEFF] w-72 my-2 sm:w-40 py-3 rounded font-semibold text-bgColor focus:"><a href="">Search</a></button>
+    </div>
+    <!-- properties -->
+    <div class=" mt-20">
+        <div class="text-center p-4">
+            <h1 class="text-4xl font-bold">Display Latest & Featured Properties</h1>
+            <p>Get started by choosing from one of our pre-built page templates<br> to showcase your properties</p>
+        </div>
+        <div class="flex flex-wrap flex-col sm:flex-row justify-center items-center gap-8 my-10">
+            <!-- first -->
+            <div class="bg-bgColor w-[350px] border border-[#5e5e5e] relative h-[445px]" data-aos="fade-up"
+            data-aos-duration="3000">
+                <div>
+                    <img src="./image/wonder1.webp" alt="" class="w-full">
+                </div>
+                <div class="absolute top-3 left-3 bg-[#00AEFF] text-bgColor font-bold p-2 rounded-md">For Sell</div>
+                <div class="absolute bottom-[230px] left-3 bg-bgColor text-[#00AEFF] p-2 rounded-md">Appartment</div>
+                <div class="">
+                    <div class="p-4">
+                        <p class="text-blue-600 font-bold">$6728</p>
+                        <p class="font-bold text-[20px] my-3">Luxury Smart Bungalow</p>
+                        <div class="flex gap-4 items-center">
+                            <div><i class="fa-solid fa-location-dot"></i></div>
+                            <p><a href="" class="hover:underline">Awoyaya,ibeju lekki,Lagos State,Nigeria.</a></p>
+                        </div>
+                    </div>
+                    <div class="flex justify-around gap-3 border-t border-[#5e5e5e] py-8 relative">
+                        <div class="flex items-center gap-1">
+                            <div>
+                                <img src="image/bed.svg" alt="">
+                            </div>
+                            <p class="text-[12px]">2 bedroom</p>
+                        </div>
+                        <!-- second -->
+                        <div class="flex items-center gap-1">
+                            <div>
+                                <img src="./image/bath.svg" alt="">
+                            </div>
+                            <p class="text-[12px]">2 bedroom</p>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <div>
+                                <img src="./image/building.svg" alt="">
+                            </div>
+                            <p class="text-[12px]">1050 Sq Ft</p>
+                        </div>
+                    </div>
+                </div>
+           </div>
+           <!-- second -->
+            <div class="bg-bgColor w-[350px] border border-[#5e5e5e] relative h-[445px]" data-aos="fade-down">
+                <div>
+                    <img src="./image/legacy7.jpg" alt="" class="w-full">
+                </div>
+                <div class="absolute top-3 left-3 bg-[#00AEFF] text-bgColor font-bold p-2 rounded-md">For Rent</div>
+                <div class="absolute bottom-[200px] left-3 bg-bgColor text-[#00AEFF] p-2 rounded-md">Appartment</div>
+                <div class="">
+                    <div class="p-4">
+                        <p class="text-blue-600 font-bold">$6728</p>
+                        <p class="font-bold text-[20px] my-3">Posh and Luxury Legacy Estate.</p>
+                        <div class="flex gap-2">
+                            <div><i class="fa-solid fa-location-dot"></i></div>
+                            <p><a href="">Akobo, Lagelu, Oyo State, Nigeria</a></p>
+                        </div>
+                    </div>
+                    <div class="flex justify-around gap-3 border-t border-[#5e5e5e] py-8">
+                        <div class="flex items-center gap-1">
+                            <div>
+                                <img src="image/bed.svg" alt="">
+                            </div>
+                            <p class="text-[12px]">2 bedroom</p>
+                        </div>
+                        <!-- second -->
+                        <div class="flex items-center gap-1">
+                            <div>
+                                <img src="./image/bath.svg" alt="">
+                            </div>
+                            <p class="text-[12px]">2 bedroom</p>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <div>
+                                <img src="./image/building.svg" alt="">
+                            </div>
+                            <p class="text-[12px]">1050 Sq Ft</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- third -->
+            <div class="bg-bgColor w-[350px] border border-[#5e5e5e] relative" data-aos="fade-down">
+                <div>
+                    <img src="./image/wonder 3.webp" alt="" class="w-full">
+                </div>
+                <div class="absolute top-3 left-3 bg-[#00AEFF] text-bgColor font-bold p-2 rounded-md">For Sell</div>
+                <div class="absolute bottom-56 left-3 bg-bgColor text-[#00AEFF] p-2 rounded-md">Appartment</div>
+                <div class="">
+                    <div class="p-4">
+                        <p class="text-blue-600 font-bold">$6728</p>
+                        <p class="font-bold text-[20px] mb-3">2 Bedroom Bungalow, Palmsvile estate.</p>
+                        <div class="flex gap-2">
+                            <div><i class="fa-solid fa-location-dot"></i></div>
+                            <p><a href="" class="hover:underline">Kuje, Federal Capital Territory, 903101, Nigeria</a></p>
+                        </div>
+                    </div>
+                    <div class="flex justify-around gap-3 border-t border-[#5e5e5e] py-6">
+                        <div class="flex items-center gap-1">
+                            <div>
+                                <img src="image/bed.svg" alt="">
+                            </div>
+                            <p class="text-[12px]">2 bedroom</p>
+                        </div>
+                        <!-- second -->
+                        <div class="flex items-center gap-1">
+                            <div>
+                                <img src="./image/bath.svg" alt="">
+                            </div>
+                            <p class="text-[12px]">2 bedroom</p>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <div>
+                                <img src="./image/building.svg" alt="">
+                            </div>
+                            <p class="text-[12px]">1050 Sq Ft</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-bgColor w-[350px] border border-[#5e5e5e] relative h-[430px]" data-aos="fade-down">
+                <div>
+                    <img src="./image/rccg-pic-.webp" alt="" class="h-52 w-full">
+                </div>
+                <div class="absolute top-3 left-3 bg-[#00AEFF] text-bgColor font-bold p-2 rounded-md">For Rent</div>
+                <div class="absolute bottom-52 left-3 bg-bgColor text-[#00AEFF] p-2 rounded-md">Appartment</div>
+                <div class="">
+                    <div class="p-4">
+                        <p class="text-blue-600 font-bold">$6728</p>
+                        <p class="font-bold text-[20px] my-3"> luxury 2 Bed Bungalow for Sale</p>
+                        <div class="flex gap-2">
+                            <div><i class="fa-solid fa-location-dot"></i></div>
+                            <p>RCCG inside the Redeem camp</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-around gap-3 border-t border-[#5e5e5e] py-8 relative">
+                        <div class="flex items-center gap-1">
+                            <div>
+                                <img src="image/bed.svg" alt="">
+                            </div>
+                            <p class="text-[12px]">2 bedroom</p>
+                        </div>
+                        <!-- second -->
+                        <div class="flex items-center gap-1">
+                            <div>
+                                <img src="./image/bath.svg" alt="">
+                            </div>
+                            <p class="text-[12px]">2 bedroom</p>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <div>
+                                <img src="./image/building.svg" alt="">
+                            </div>
+                            <p class="text-[12px]">1050 Sq Ft</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-bgColor w-[350px] border border-[#5e5e5e] relative h-[430px]" data-aos="fade-down">
+                <div>
+                    <img src="./image/last.jpeg" alt="" class="h-52 w-full">
+                </div>
+                <div class="absolute top-3 left-3 bg-[#00AEFF] text-bgColor font-bold p-2 rounded-md">For Sell</div>
+                <div class="absolute bottom-52 left-3 bg-bgColor text-[#00AEFF] p-2 rounded-md">Appartment</div>
+                <div class="">
+                    <div class="p-4">
+                        <p class="text-blue-600 font-bold">$6728</p>
+                        <p class="font-bold text-[20px] my-3">Pinnock Prime Estate Land</p>
+                        <div class="flex gap-2">
+                            <div><i class="fa-solid fa-location-dot"></i></div>
+                            <p>Pinnock Beach Estate, Lekki, Nigeria</p>
+                        </div>
+                    </div>
+                    <div class="flex justify-around gap-3 border-t border-[#5e5e5e] py-8 relative">
+                        <div class="flex items-center gap-1">
+                            <div>
+                                <img src="image/bed.svg" alt="">
+                            </div>
+                            <p class="text-[12px]">2 bedroom</p>
+                        </div>
+                        <!-- second -->
+                        <div class="flex items-center gap-1">
+                            <div>
+                                <img src="./image/bath.svg" alt="">
+                            </div>
+                            <p class="text-[12px]">2 bedroom</p>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <div>
+                                <img src="./image/building.svg" alt="">
+                            </div>
+                            <p class="text-[12px]">1050 Sq Ft</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-bgColor w-[350px] border border-[#5e5e5e] relative" data-aos="fade-down">
+                <div>
+                    <img src="./image/wonder3.webp" alt="" class="h-52 w-full">
+                </div>
+                <div class="absolute top-3 left-3 bg-[#00AEFF] text-bgColor font-bold p-2 rounded-md">For Rent</div>
+                <div class="absolute bottom-52 left-3 bg-bgColor text-[#00AEFF] p-2 rounded-md">Appartment</div>
+                <div class="">
+                    <div class="p-4">
+                        <p class="text-blue-600">$6728</p>
+                        <p class="font-bold text-[20px] mb-3">Lekki Luxury Bungalow with Solar Power</p>
+                        <div class="flex gap-2">
+                            <div><i class="fa-solid fa-location-dot"></i></div>
+                            <p><a href="">Lekki,Legos, Nigeria</a></p>
+                        </div>
+                    </div>
+                    <div class="flex justify-around gap-3 border-t border-[#5e5e5e] py-6">
+                        <div class="flex items-center gap-1">
+                            <div>
+                                <img src="image/bed.svg" alt="">
+                            </div>
+                            <p class="text-[12px]">2 bedroom</p>
+                        </div>
+                        <!-- second -->
+                        <div class="flex items-center gap-1">
+                            <div>
+                                <img src="./image/bath.svg" alt="">
+                            </div>
+                            <p class="text-[12px]">2 bedroom</p>
+                        </div>
+                        <div class="flex items-center gap-1">
+                            <div>
+                                <img src="./image/building.svg" alt="">
+                            </div>
+                            <p class="text-[12px]">1050 Sq Ft</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="bg-[#00AEFF] px-4 py-3 rounded font-semibold text-bgColor"><a href="property.html">Browse More Properties</a></button>
+        </div>
+    </div>
+<!-- How we can help you -->
+
+    <div class="sm:p-20 bg-no-repeat bg-center bg-cover flex flex-col items-center justify-center"style="background-image: url(image/house2.webp);">
+        <div class="py-4">
+            <div class="font-bold text-5xl text-bgColor text-center mb-10">
+                <h1>How we help people?</h1>
+            </div>
+            <div class="flex flex-col sm:flex-row px-8 sm:px-40" data-aos="fade-down">
+                <div class="bg-touch text-bgColor px-10 py-16">
+                    <div class="flex justify-center mb-10">
+                        <img src="./image/services1.svg" alt="">
+                    </div>
+                    <div class="text-center">
+                        <p class="font-bold">Sell house or office</p>
+                        <p>Get started by choosing from one of our pre-built page templates to showcase your properties</p>
+                    </div> 
+                </div>
+                <div class="bg-touch text-bgColor shadow-2xl px-10 py-16" data-aos="fade-down"> 
+                    <!-- i need space at the top and buttom -->
+                    <div class="flex justify-center mb-10">
+                        <img src="./image/services2.svg" alt="">
+                    </div>
+                    <div class="text-center">
+                        <p class="font-bold">Sell house or office</p>
+                        <p>Get started by choosing from one of our pre-built page templates to showcase your properties</p>
+                    </div>
+                </div>
+                <div class="bg-touch text-bgColor px-10 py-16 shadow-2xl" data-aos="fade-down">
+                    <div class="flex justify-center mb-10">
+                        <img src="./image/services3.svg" alt="">
+                    </div>
+                    <div class="text-center">
+                        <p class="font-bold">Sell house or office</p>
+                        <p>Get started by choosing from one of our pre-built page templates to showcase your properties</p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    
+    </div>
+
+<!-- sales -->
+
+<!-- <div class=" mt-10">
+    <div class="text-center p-4">
+        <h1 class="text-4xl font-[500] ">Properties for Sale</h1>
+    </div>
+    <div class="flex flex-col sm:flex-row justify-center items-center gap-6 my-10">
+        first
+       <div class="bg-bgColor w-[350px] border border-[#5e5e5e]">
+            <div>
+                <img src="./image/items1.jpg.webp" alt="">
+            </div>
+            <div class="">
+                <div class="p-5">
+                    <p class="text-blue-600">$6728</p>
+                    <p class="font-bold mb-4">OFFICE</p>
+                    <p>Get started by choosing from one of our pre-built page templates to showcase your properties</p>
+                </div>
+                <div class="flex justify-center gap-3 border-t border-[#5e5e5e] py-6">
+                    <div class="flex items-center gap-1">
+                        <div>
+                            <img src="image/bed.svg" alt="">
+                        </div>
+                        <p class="text-[12px]">2 bedroom</p>
+                    </div>
+                    second
+                    <div class="flex items-center gap-1">
+                        <div>
+                            <img src="./image/bath.svg" alt="">
+                        </div>
+                        <p class="text-[12px]">2 bedroom</p>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <div>
+                            <img src="./image/building.svg" alt="">
+                        </div>
+                        <p class="text-[12px]">1050 Sq Ft</p>
+                    </div>
+                </div>
+            </div>
+       </div>
+       second
+        <div class="bg-bgColor w-[350px] border border-touch">
+            <div>
+                <img src="./image/items1.jpg.webp" alt="">
+            </div>
+            <div class="">
+                <div class="p-5">
+                    <p class="text-blue-600">$6728</p>
+                    <p class="font-bold mb-4">OFFICE</p>
+                    <p>Get started by choosing from one of our pre-built page templates to showcase your properties</p>
+                </div>
+                <div class="flex justify-center gap-3 border-t border-[#5e5e5e] py-6">
+                    <div class="flex items-center gap-1">
+                        <div>
+                            <img src="image/bed.svg" alt="">
+                        </div>
+                        <p class="text-[12px]">2 bedroom</p>
+                    </div>
+                    second
+                    <div class="flex items-center gap-1">
+                        <div>
+                            <img src="./image/bath.svg" alt="">
+                        </div>
+                        <p class="text-[12px]">2 bedroom</p>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <div>
+                            <img src="./image/building.svg" alt="">
+                        </div>
+                        <p class="text-[12px]">1050 Sq Ft</p>
+                    </div>
+                </div>
+            </div>
+       </div>
+        third
+        <div class="bg-bgColor w-[350px] border border-touch">
+            <div>
+                <img src="./image/items1.jpg.webp" alt="">
+            </div>
+            <div class="">
+                <div class="p-5">
+                    <p class="text-blue-600">$6728</p>
+                    <p class="font-bold mb-4">OFFICE</p>
+                    <p>Get started by choosing from one of our pre-built page templates to showcase your properties</p>
+                </div>
+                <div class="flex justify-center gap-3 border-t border-[#5e5e5e] py-6">
+                    <div class="flex items-center gap-1">
+                        <div>
+                            <img src="image/bed.svg" alt="">
+                        </div>
+                        <p class="text-[14px]">2 bedroom</p>
+                    </div>
+                    second
+                    <div class="flex items-center gap-1">
+                        <div>
+                            <img src="./image/bath.svg" alt="">
+                        </div>
+                        <p class="text-[14px]">2 bedroom</p>
+                    </div>
+                    <div class="flex items-center gap-1">
+                        <div>
+                            <img src="./image/building.svg" alt="">
+                        </div>
+                        <p class="text-[14px]">1050 Sq Ft</p>
+                    </div>
+                </div>
+            </div>
+       </div>
+    </div>
+</div> -->
+
+
+<!-- <style>
+    ::-webkit-scrollbar{
+        display: none;
+    }
+</style> -->
+<!-- explore -->
+
+<!-- <div class="bg-slate-100 p-10 flex sm:flex-row flex-col items-center sm:p-20">
+    <div class="sm:w-[35%] w-full">
+        <h1 class="text-4xl font-[500] mb-5">Explore <br>by Property Type</h1>
+        <p class="mb-6 text-[18px] text-[#5e5e5e]">Get started by choosing from one of our pre-<br>built page templates to showcase your<br> properties</p>
+        <button class="bg-[#00AEFF] py-3 px-10 rounded font-semibold text-bgColor"><a href="">Add Property</a></button>
+    </div>
+    <div class="bg-white sm:w-[65%] flex flex-col sm:flex-row items-center w-full">
+        <div class="type-house">
+            <div>
+                <img src="image/property1.svg" alt="">
+            </div>
+            <p>Home&Apartment</p>
+            <div class="explore"></div>
+        </div>
+        <div class="type-house">
+            <div>
+                <img src="image/property2.svg" alt="">
+            </div>
+            <p>Studio</p>
+            <div class="explore"></div>
+        </div>
+        <div class="type-house">
+            <div>
+                <img src="image/property3.svg" alt="">
+            </div>
+            <p>Studio</p>
+            <div class="explore"></div>
+        </div>
+        <div class="type-house">
+            <div>
+                <img src="image/property4.svg" alt="">
+            </div>
+            <p>Office</p>
+            <div class="explore"></div>
+        </div>
+    </div>
+</div> -->
+<!-- properties Agents -->
+<!-- this place was delected by me -->
+    <div class="mt-16">
+        <div class="text-center">
+            <h1 class="text-4xl font-[500] mb-4">Happy Clients</h1>
+            <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd<br> vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+        </div>
+        <div class="sm:mx-16 mx-10 my-14 flex sm:flex-row flex-col gap-5" data-aos="flip-up">
+            <div class="sm:w-[50%] bg-slate-100 rounded p-8">
+                <div class="flex gap-2 text-touch">
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="my-6">As first-time buyers, we were a bit nervous, but [Agent’s Name] made the whole process so easy. They were patient, informative, and always available to answer our questions. We are now proud homeowners thanks to their help!</div>
+                <div class="flex items-center gap-5">
+                    <div class="rounded-full bg-red-600 w-24 h-24 bg-cover bg-no-repeat bg-center" style="background-image: url(image/man.jpg);">
+                        <!-- <img src="image/man2.jpg" alt="" class="w-24 h-24 rounded-full"> -->
+                    </div>
+                    <div>
+                        <p class="font-bold text-[20px]">Shane Watson</p>
+                        <p class="text-touch">Co-founder</p>
+                    </div>
+                </div>
+            </div>
+            <!-- second -->
+            <div class="sm:w-[50%] bg-slate-100 rounded p-8" data-aos="flip-up">
+                <div class="flex flex-row gap-2 text-touch">
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                    <div><i class="fa-solid fa-star"></i></div>
+                </div>
+                <div class="my-6">Working with [Agent’s Name] was an absolute pleasure! They listened to all our needs and found the perfect home for our growing family. The process was smooth, and their expertise really showed through. We couldn't be happier with our new home!</div>
+                <div class="flex items-center gap-5">
+                    <div class="w-24 h-24 rounded-full bg-red-600 bg-no-repeat bg-cover bg-center" style="background-image: url(image/man2.jpg);">
+                        <!-- <img src="" alt=""> -->
+                    </div>
+                    <div>
+                        <p class="font-bold text-[20px]">Henry Nicholas</p>
+                        <p class="text-touch">Client</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-blue-200 p-10 sm:m-16 rounded flex sm:flex-row flex-col">
+        <div class="bg-bgColor rounded border-dotted border-2 border-blue-400 flex p-8 sm:gap-10">
+            <div class="hidden md:w-[50%] md:flex">
+                <img src="image/meeting.avif" alt="" class="rounded">
+            </div>
+            <div class="flex flex-col justify-center sm:w-[50%]">
+                <h1 class="text-4xl font-bold">Contact With Our<br> Certified Agent</h1>
+                <p class="sm:my-5">Eirmod sed ipsum dolor sit rebum magna erat. Tempor lorem kasd vero ipsum sit sit diam justo sed vero dolor duo.</p>
+                <div class="flex gap-5">
+                    <button id="call" class="bg-[#00AEFF] px-4 py-3 rounded font-semibold text-bgColor"><a href="contact.html">Contact Us</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="px-10 sm:px-16 py-20 bg-touch">
+        <div class="flex sm:flex-row flex-col justify-center">
+            <div class="sm:w-[22%]">
+                <h1 class="font-bold text-[24px] text-bgColor">Get In Touch</h1>
+                <div class="contact">
+                    <div><i class="fa-solid fa-location-dot text-bgColor"></i></div>
+                    <p class="text-bgColor">23 Street, Lagos, Nigeria</p>
+                </div>
+                <div class="contact">
+                    <div><i class="fa-solid fa-phone text-bgColor"></i></div>
+                    <p class="text-bgColor">09038186039</p>
+                </div>
+                <div class="contact">
+                    <div><i class="fa-solid fa-envelope text-bgColor"></i></div>
+                    <p class="text-bgColor">info@example.com</p>
+                </div>
+        
+                <div class="contact">
+                    <div class="icon"><a href="https://twitter.com"><i class="fa-brands fa-twitter"></i></a></i></div>
+                    <div class="icon"><a href="https://www.facebook.com"><i class="fa-brands fa-facebook-f"></i></a></div>
+                    <div class="icon"><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></i></div>
+                    <div class="icon"><a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a></i></div>
+                </div>
+            </div>
+            <div class="sm:w-[22%]">
+                <h1 class="font-bold text-[24px] text-bgColor">Quick Links</h1>
+                <li class="list-none hover:underline text-touch"><a href="About.html" class="text-bgColor">About Us</a></li>
+                <li class="list-none hover:underline py-2 text-touch"><a href="contact.html" class="text-bgColor">Contact Us</a></li>
+                <li class="list-none hover:underline text-touch"><a href="" class="text-bgColor">Our Service</a></li>
+                <li class="list-none hover:underline py-2 text-touch"><a href="privacy.html" class="text-bgColor">Privacy Policy</a></li>
+                <li class="list-none hover:underline text-touch"><a href="" class="text-bgColor">Teams & Condition</a></li>
+            </div>
+            <div class="sm:w-[28%]">
+                <h1 class="font-bold text-[24px] text-bgColor mb-4">Photo Gallery</h1>
+                <div class="flex flex-wrap gap-2">
+                    <div class="footer-img">
+                        <img src="image/img1.jpg" alt="" class="w-20 h-14 rounded-md">
+                    </div>
+                    <div class="footer-img">
+                        <img src="image/wonder 3.webp" alt="" class="w-20 h-14 rounded-md">
+                    </div>
+                    <div class="footer-img">
+                        <img src="image/wonder1.webp" alt="" class="w-20 h-14 rounded-md">
+                    </div>
+                    <div class="footer-img">
+                        <img src="image/wonder3.webp" alt="" class="w-20 h-14 rounded-md">
+                    </div>
+                    <div class="footer-img">
+                        <img src="image/peace.avif" alt="" class="w-20 h-14 rounded-md">
+                    </div>
+                    <div class="footer-img">
+                        <img src="image/home4.jpg" alt="" class="w-20 h-14 rounded-md">
+                    </div>
+                </div>
+            </div>
+            <div class="sm:w-[28%]">
+                <h1 class="font-bold text-[24px] text-bgColor">Newsletter</h1>
+                <p class="text-bgColor py-2">Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                <div class="relative flex items-center">
+                    <input type="text" placeholder="Your email" class="rounded-md w-full py-4 ml-2 px-5">
+                    <button class="bg-[#00AEFF] absolute right-2 px-4 py-3 text-bgColor rounded-md">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+</body>
+</html>
